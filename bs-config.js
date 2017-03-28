@@ -27,15 +27,19 @@ const models = [
   {
     makeName: 'Ford',
     modelName: 'Edge',
+    imgSrc: 'https://cars.usnews.com/static/images/Auto/izmo/i6336198/2017_ford_edge_angularfront.jpg',
   }, {
     makeName: 'Ford',
     modelName: 'Escape',
+    imgSrc: 'http://o.aolcdn.com/commerce/autodata/images/USC70FOS131A021001.jpg',
   }, {
     makeName: 'Acura',
     modelName: 'ILX',
+    imgSrc: 'http://www.acura.com/-/media/Acura-Platform/vehicle-pages/ILX/2017/landing-page/hero-landing/mlp-hero-xsmall-2x.png',
   }, {
     makeName: 'Acura',
     modelName: 'MDX',
+    imgSrc: 'https://cars.usnews.com/static/images/Auto/izmo/i2320625/2017_acura_mdx_angularfront.jpg',
   },
 ];
 

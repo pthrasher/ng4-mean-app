@@ -1,0 +1,9 @@
+To run:
+=======
+
+```
+npm i
+npm start
+```
+
+That will load data into your mongodb (mongodb://localhost:27017/ng4-mean-app) and open a browser tab to http://localhost:3000/
