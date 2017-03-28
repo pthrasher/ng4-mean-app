@@ -3,15 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'dropdown',
   styleUrls: ['./dropdown.component.css'],
-  template: `
-    <ul>
-      <li
-        *ngFor="let item of items"
-        (click)="handleClick(item)"
-        [class.is-selected]="selected === item"
-        >{{item[valueKey]}}</li>
-    </ul>
-    `,
+  templateUrl: './dropdown.component.html',
 })
 export class DropdownComponent  {
   @Input() items: any[];

@@ -8,27 +8,7 @@ import { Model } from './model';
 @Component({
   selector: 'my-app',
   styleUrls: ['./app.component.css'],
-  template: `
-    <h4>Select a make:</h4>
-    <dropdown
-      [items]="makes"
-      [valueKey]="'makeName'"
-      [selected]="selectedMake"
-      (selectedChange)="getModels($event)"
-    ></dropdown>
-    <div *ngIf="selectedMake != null">
-      <h4>Select a model:</h4>
-      <dropdown
-        [items]="models"
-        [valueKey]="'modelName'"
-        [(selected)]="selectedModel"
-        ></dropdown>
-    </div>
-    <div class="imgContainer" *ngIf="selectedModel != null">
-      <h4>{{selectedMake.makeName}} - {{selectedModel.modelName}}</h4>
-      <img [src]="selectedModel.imgSrc" />
-    </div>
-  `,
+  templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
   makes: Make[];

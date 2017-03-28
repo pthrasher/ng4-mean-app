@@ -1,0 +1,7 @@
+<ul>
+  <li
+    *ngFor="let item of items"
+    (click)="handleClick(item)"
+    [class.is-selected]="selected === item"
+    >{{item[valueKey]}}</li>
+</ul>
