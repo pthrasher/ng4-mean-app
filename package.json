@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "build": "tsc -p src/",
-    "build:watch": "tsc -p src/ -w",
+    "build": "tsc -p src/; ./compile-all-less.sh",
+    "build:watch": "concurrently \"tsc -p src/ -w\" \"watch-lessc -d src -o src\"",
     "serve": "lite-server -c=bs-config.js",
     "prestart": "npm run build",
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
@@ -34,6 +34,7 @@
     "mongodb": "^2.2.25",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
+    "watch-lessc": "0.0.3",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
