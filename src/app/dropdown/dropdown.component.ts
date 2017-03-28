@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
   template: `<h1>Hello {{name}}</h1>`,
 })
 export class DropdownComponent  {
-  @Input() items
+  // @Input() items
   name = 'Angular';
 }
